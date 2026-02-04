@@ -45,6 +45,13 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
 )
 
+# Auto generate board_init.c from CubeMX headers
+find_package(Python3 COMPONENTS Interpreter REQUIRED)
+execute_process(
+    COMMAND ${Python3_EXECUTABLE} ${CMAKE_SOURCE_DIR}/scripts/gen_board_init.py
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+)
+
 # Auto collect all sources under tools/
 file(GLOB_RECURSE TOOLS_SOURCES
     ${CMAKE_SOURCE_DIR}/tools/*/*.c
