@@ -1,0 +1,40 @@
+name: Build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Setup ARM GCC
+      uses: carlosperate/arm-none-eabi-gcc-action@v1
+      with:
+        release: '13.2.Rel1'
+        
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        
+    - name: Configure
+      run: cmake --preset Release
+      
+    - name: Build
+      run: cmake --build build/Release
+      
+    - name: Upload Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: firmware
+        path: |
+          build/Release/*.elf
+          build/Release/*.bin
+          build/Release/*.hex
