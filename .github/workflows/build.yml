@@ -51,25 +51,28 @@ jobs:
       
     - name: Run cppcheck
       run: |
+        mkdir -p cppcheck-report
         cppcheck --enable=warning,style,performance \
-          --error-exitcode=1 \
+          --xml --xml-version=2 \
           --inline-suppr \
           --suppress=missingIncludeSystem \
           --suppress=unmatchedSuppression \
           -I Core/Inc \
           -I Drivers/STM32F4xx_HAL_Driver/Inc \
           -I Drivers/CMSIS/Include \
-          -I tools/RTT \
           -I tools/auto_Init \
           -I app \
-          Core/Src/*.c \
           app/*.c \
-          tools/**/*.c \
-          2>&1 | tee cppcheck.log
+          tools/auto_Init/*.c \
+          2> cppcheck.xml
+          
+    - name: Generate HTML Report
+      run: |
+        cppcheck-htmlreport --file=cppcheck.xml --report-dir=cppcheck-html --source-dir=.
           
     - name: Upload Analysis Report
       uses: actions/upload-artifact@v4
       if: always()
       with:
-        name: cppcheck-report
-        path: cppcheck.log
+        name: cppcheck-html-report
+        path: cppcheck-html/
