@@ -507,7 +507,6 @@ int SEGGER_RTT_vprintf(unsigned BufferIndex, const char * sFormat, va_list * pPa
 #define RTT_CTRL_BG_BRIGHT_CYAN       "\x1B[4;46m"
 #define RTT_CTRL_BG_BRIGHT_WHITE      "\x1B[4;47m"
 
-void log(const char *sFormat, ...);
 #endif
 
 /*************************** End of file ****************************/

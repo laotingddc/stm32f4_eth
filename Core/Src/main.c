@@ -22,7 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "rtt_log.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -94,6 +94,12 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    LOG_E("This is an error message.");
+    LOG_W("This is a warning message.");
+    LOG_I("This is an info message.");
+    LOG_D("This is a debug message.");
+    
+    HAL_Delay(1000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

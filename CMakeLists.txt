@@ -45,14 +45,23 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined library search paths
 )
 
+# Auto collect all sources under tools/
+file(GLOB_RECURSE TOOLS_SOURCES
+    ${CMAKE_SOURCE_DIR}/tools/*/*.c
+    ${CMAKE_SOURCE_DIR}/tools/*/*.S
+)
+file(GLOB TOOLS_INCLUDE_DIRS LIST_DIRECTORIES true ${CMAKE_SOURCE_DIR}/tools/*)
+
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    ${TOOLS_SOURCES}
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    ${TOOLS_INCLUDE_DIRS}
 )
 
 # Add project symbols (macros)

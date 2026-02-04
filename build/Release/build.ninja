@@ -53,7 +53,7 @@ build CMakeFiles/stm32f4_eth.dir/Core/Src/main.c.obj: C_COMPILER__stm32f4_eth_un
   DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\stm32f4_eth.dir\Core\Src\main.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
   OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\Core\Src
 
@@ -61,7 +61,7 @@ build CMakeFiles/stm32f4_eth.dir/Core/Src/gpio.c.obj: C_COMPILER__stm32f4_eth_un
   DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\stm32f4_eth.dir\Core\Src\gpio.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
   OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\Core\Src
 
@@ -69,7 +69,7 @@ build CMakeFiles/stm32f4_eth.dir/Core/Src/stm32f4xx_it.c.obj: C_COMPILER__stm32f
   DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\stm32f4_eth.dir\Core\Src\stm32f4xx_it.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
   OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\Core\Src
 
@@ -77,7 +77,7 @@ build CMakeFiles/stm32f4_eth.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C_COMPILER__s
   DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\stm32f4_eth.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
   OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\Core\Src
 
@@ -85,7 +85,7 @@ build CMakeFiles/stm32f4_eth.dir/Core/Src/sysmem.c.obj: C_COMPILER__stm32f4_eth_
   DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\stm32f4_eth.dir\Core\Src\sysmem.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
   OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\Core\Src
 
@@ -93,7 +93,7 @@ build CMakeFiles/stm32f4_eth.dir/Core/Src/syscalls.c.obj: C_COMPILER__stm32f4_et
   DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\stm32f4_eth.dir\Core\Src\syscalls.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
-  INCLUDES = -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
   OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\Core\Src
 
@@ -101,9 +101,41 @@ build CMakeFiles/stm32f4_eth.dir/startup_stm32f407xx.s.obj: ASM_COMPILER__stm32f
   DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\stm32f4_eth.dir\startup_stm32f407xx.s.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -O3 -DNDEBUG
-  INCLUDES = -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
   OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir
+
+build CMakeFiles/stm32f4_eth.dir/tools/RTT/SEGGER_RTT.c.obj: C_COMPILER__stm32f4_eth_unscanned_Release D$:/code/stm32f4_eth/tools/RTT/SEGGER_RTT.c || cmake_object_order_depends_target_stm32f4_eth
+  DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\stm32f4_eth.dir\tools\RTT\SEGGER_RTT.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
+  OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\tools\RTT
+
+build CMakeFiles/stm32f4_eth.dir/tools/RTT/SEGGER_RTT_ASM_ARMv7M.S.obj: ASM_COMPILER__stm32f4_eth_unscanned_Release D$:/code/stm32f4_eth/tools/RTT/SEGGER_RTT_ASM_ARMv7M.S || cmake_object_order_depends_target_stm32f4_eth
+  DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\stm32f4_eth.dir\tools\RTT\SEGGER_RTT_ASM_ARMv7M.S.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -x assembler-with-cpp -MMD -MP -O3 -DNDEBUG
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
+  OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\tools\RTT
+
+build CMakeFiles/stm32f4_eth.dir/tools/RTT/SEGGER_RTT_printf.c.obj: C_COMPILER__stm32f4_eth_unscanned_Release D$:/code/stm32f4_eth/tools/RTT/SEGGER_RTT_printf.c || cmake_object_order_depends_target_stm32f4_eth
+  DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\stm32f4_eth.dir\tools\RTT\SEGGER_RTT_printf.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
+  OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\tools\RTT
+
+build CMakeFiles/stm32f4_eth.dir/tools/RTT/rtt_log.c.obj: C_COMPILER__stm32f4_eth_unscanned_Release D$:/code/stm32f4_eth/tools/RTT/rtt_log.c || cmake_object_order_depends_target_stm32f4_eth
+  DEFINES = -DSTM32F407xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles\stm32f4_eth.dir\tools\RTT\rtt_log.c.obj.d
+  FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0 -std=gnu11
+  INCLUDES = -ID:/code/stm32f4_eth/tools/RTT -ID:/code/stm32f4_eth/Core/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc -ID:/code/stm32f4_eth/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -ID:/code/stm32f4_eth/Drivers/CMSIS/Device/ST/STM32F4xx/Include -ID:/code/stm32f4_eth/Drivers/CMSIS/Include
+  OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
+  OBJECT_FILE_DIR = CMakeFiles\stm32f4_eth.dir\tools\RTT
 
 
 # =============================================================================
@@ -113,7 +145,7 @@ build CMakeFiles/stm32f4_eth.dir/startup_stm32f407xx.s.obj: ASM_COMPILER__stm32f
 #############################################
 # Link the executable stm32f4_eth.elf
 
-build stm32f4_eth.elf: C_EXECUTABLE_LINKER__stm32f4_eth_Release cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/main.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/gpio.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/sysmem.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/syscalls.c.obj CMakeFiles/stm32f4_eth.dir/startup_stm32f407xx.s.obj || cmake/stm32cubemx/STM32_Drivers
+build stm32f4_eth.elf: C_EXECUTABLE_LINKER__stm32f4_eth_Release cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32f4xx.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/main.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/gpio.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/sysmem.c.obj CMakeFiles/stm32f4_eth.dir/Core/Src/syscalls.c.obj CMakeFiles/stm32f4_eth.dir/startup_stm32f407xx.s.obj CMakeFiles/stm32f4_eth.dir/tools/RTT/SEGGER_RTT.c.obj CMakeFiles/stm32f4_eth.dir/tools/RTT/SEGGER_RTT_ASM_ARMv7M.S.obj CMakeFiles/stm32f4_eth.dir/tools/RTT/SEGGER_RTT_printf.c.obj CMakeFiles/stm32f4_eth.dir/tools/RTT/rtt_log.c.obj || cmake/stm32cubemx/STM32_Drivers
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -Os -g0
   OBJECT_DIR = CMakeFiles\stm32f4_eth.dir
   POST_BUILD = cd .
