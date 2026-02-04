@@ -52,16 +52,24 @@ file(GLOB_RECURSE TOOLS_SOURCES
 )
 file(GLOB TOOLS_INCLUDE_DIRS LIST_DIRECTORIES true ${CMAKE_SOURCE_DIR}/tools/*)
 
+# Auto collect all sources under app/
+file(GLOB_RECURSE APP_SOURCES
+    ${CMAKE_SOURCE_DIR}/app/*.c
+)
+file(GLOB APP_INCLUDE_DIRS LIST_DIRECTORIES true ${CMAKE_SOURCE_DIR}/app)
+
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     ${TOOLS_SOURCES}
+    ${APP_SOURCES}
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     ${TOOLS_INCLUDE_DIRS}
+    ${APP_INCLUDE_DIRS}
 )
 
 # Add project symbols (macros)

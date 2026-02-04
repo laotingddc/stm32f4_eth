@@ -22,8 +22,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "rtt_log.h"
-#include "auto_init.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,19 +47,9 @@
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
- 
+void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-int main(void)
-{
 
-    while (1)
-    {
-        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0); // 切换PA5引脚状态
-        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1); // 切换PA5引脚状态
-        LOG_E("This is an error message.");
-        HAL_Delay(1000);
-    }
-}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -120,17 +109,7 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-int system_init(void)
-{
-    /* 初始化HAL库 */
-    HAL_Init();
-    
-    /* 配置系统时钟 */
-    SystemClock_Config();
-    
-    return 0;
-}
-INIT_BOARD_EXPORT(system_init);
+
 /* USER CODE END 4 */
 
 /**
