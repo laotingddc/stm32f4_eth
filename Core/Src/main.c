@@ -23,6 +23,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "rtt_log.h"
+#include "auto_init.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,9 +48,19 @@
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
-void SystemClock_Config(void);
+ 
 /* USER CODE BEGIN PFP */
+int main(void)
+{
 
+    while (1)
+    {
+        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0); // 切换PA5引脚状态
+        HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1); // 切换PA5引脚状态
+        LOG_E("This is an error message.");
+        HAL_Delay(1000);
+    }
+}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -61,51 +72,6 @@ void SystemClock_Config(void);
   * @brief  The application entry point.
   * @retval int
   */
-int main(void)
-{
-
-  /* USER CODE BEGIN 1 */
-
-  /* USER CODE END 1 */
-
-  /* MCU Configuration--------------------------------------------------------*/
-
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    LOG_E("This is an error message.");
-    LOG_W("This is a warning message.");
-    LOG_I("This is an info message.");
-    LOG_D("This is a debug message.");
-    
-    HAL_Delay(1000);
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
-}
 
 /**
   * @brief System Clock Configuration
@@ -154,7 +120,17 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
-
+int system_init(void)
+{
+    /* 初始化HAL库 */
+    HAL_Init();
+    
+    /* 配置系统时钟 */
+    SystemClock_Config();
+    
+    return 0;
+}
+INIT_BOARD_EXPORT(system_init);
 /* USER CODE END 4 */
 
 /**
@@ -187,4 +163,5 @@ void assert_failed(uint8_t *file, uint32_t line)
      ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
   /* USER CODE END 6 */
 }
+
 #endif /* USE_FULL_ASSERT */

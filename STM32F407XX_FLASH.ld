@@ -127,7 +127,16 @@ SECTIONS
     PROVIDE_HIDDEN (__preinit_array_end = .);
     . = ALIGN(4);
   } >FLASH
-
+  
+  /* Auto init function section */
+  .init_fn :
+  {
+    . = ALIGN(4);
+    __init_fn_start = .;
+    KEEP(*(SORT(.init_fn.*)))
+    __init_fn_end = .;
+    . = ALIGN(4);
+  } >FLASH
   .init_array (READONLY) : /* The "READONLY" keyword is only supported in GCC11 and later, remove it if using GCC10 or earlier. */
   {
     . = ALIGN(4);
