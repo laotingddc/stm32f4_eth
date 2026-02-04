@@ -1,0 +1,24 @@
+/**
+ * @file version.h
+ * @brief 版本信息 (由CMake自动生成)
+ */
+
+#ifndef VERSION_H
+#define VERSION_H
+
+#define VERSION_MAJOR       @VERSION_MAJOR@
+#define VERSION_MINOR       @VERSION_MINOR@
+#define VERSION_PATCH       @VERSION_PATCH@
+
+#define GIT_HASH            "@GIT_HASH@"
+#define GIT_BRANCH          "@GIT_BRANCH@"
+#define GIT_DIRTY           @GIT_DIRTY@
+
+#define BUILD_TIME          "@BUILD_TIME@"
+#define BUILD_DATE          "@BUILD_DATE@"
+
+/* 完整版本字符串 */
+#define VERSION_STRING      "v@VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@"
+#define VERSION_FULL        VERSION_STRING "-" GIT_HASH
+
+#endif /* VERSION_H */

@@ -2,6 +2,9 @@
 build/
 out/
 
+# Auto generated files
+ 
+
 # IDE and editor files
 .vscode/
 .idea/
